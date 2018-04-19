@@ -10,7 +10,7 @@ export default {
       props: ["type", "bgColor", "fixed", "className"],
     data(){
         return{
-            isBottomBorder:false
+            isBottomBorder:true
         }
     }
   
@@ -28,7 +28,10 @@ export default {
     height: .44rem;
     background: #fff;
     line-height: .44rem;
-   
+    &.bottom-border{
+        border-color: #ccc;
+    }
+
     h1{
         text-align: center;
         font-size: 24px;
