@@ -33,6 +33,8 @@ new Vue({
 ```
 
 #### 2.20 新增 显性过渡持续的时间
-* <transition :duration="1000">...</transition>
-* 也可以定制进入移除的时间 ：<transition :duration="{ enter: 500, leave: 800 }">...</transition>
+```
+ <transition :duration="1000">...</transition>
+  也可以定制进入移除的时间 ：<transition :duration="{ enter: 500, leave: 800 }">...</transition>
+```
 
