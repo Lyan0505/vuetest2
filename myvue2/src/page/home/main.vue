@@ -71,11 +71,13 @@ export default {
 
 <style lang="less">
 @import "../../less/swiper.min.css";
+
 .slider-content{
     width: 100%;
     margin-top: .44rem;
     img{
         width: 100%;
+        height: 100%;
     }
 }
 
