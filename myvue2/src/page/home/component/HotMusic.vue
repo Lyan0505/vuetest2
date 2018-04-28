@@ -3,8 +3,8 @@
       <!-- top -->
       <div class="tab-top">
           <ul>
-              <li :class="[flag==false ?'active':'']" @click='choose()'>推荐音乐</li>
-              <li :class="[flag==true ?'active':'']" @click='chooseB()'>热门音乐</li>
+              <li :class="[flag==true ?'active':'']" @click='choose()'>推荐音乐</li>
+              <li :class="[flag==false ?'active':'']" @click='chooseB()'>热门音乐</li>
           </ul>
       </div>
 
@@ -19,7 +19,7 @@
                   <div class="content">
                       <ul>
                           <li class="list">
-                              
+
                           </li>
                           <li class="list"></li>
                           <li class="list"></li>
@@ -30,7 +30,8 @@
 
           </div>
           <!-- 热歌榜 -->
-          <div class="hot" v-else>这是热门音乐
+          <div class="hot" v-else>
+              这是热门音乐
 
           </div>
       </div>
@@ -43,7 +44,7 @@
 export default {
     data(){
         return{
-        flag:false
+        flag:true
         }
     },
     methods:{
@@ -70,6 +71,7 @@ export default {
         }
     }
     .tab-content{
+        font-size: 20px;
 
     }
     

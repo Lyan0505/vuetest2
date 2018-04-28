@@ -76,6 +76,7 @@ export default {
     margin-top: .44rem;
     img{
         width: 100%;
+        height: 100%;
     }
 }
 
