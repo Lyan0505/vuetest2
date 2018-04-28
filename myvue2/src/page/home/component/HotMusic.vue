@@ -3,8 +3,9 @@
       <!-- top -->
       <div class="tab-top">
           <ul>
-              <li :class="[flag==true ?'active':'']" @click='choose()'>推荐音乐</li>
-              <li :class="[flag==false ?'active':'']" @click='chooseB()'>热门音乐</li>
+             <li v-for="(item,index) in headerList" :key="index" :class="[index=this.nowindex?'checked':'']" @click="changeTab(index)">
+                 {{item}}
+             </li>
           </ul>
       </div>
 
@@ -56,19 +57,15 @@
 export default {
     data(){
         return{
-        flag:true
+        headerList:['推荐音乐','热门音乐','搜索'],
+        nowindex:0
         }
     },
     methods:{
-        choose(){
-            this.flag=true
-
-        },
-        chooseB(){
-            this.flag=false
+        changeTab(index){
+            this.nowindex=index;
         }
     }
-  
 }
 </script>
 

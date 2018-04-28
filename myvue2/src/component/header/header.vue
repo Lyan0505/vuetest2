@@ -19,7 +19,6 @@ export default {
 
 <style lang="less">
 .header-contain{
-   
     z-index: 200;
     position: fixed;
     top: 0;
@@ -36,6 +35,7 @@ export default {
         text-align: center;
         font-size: 24px;
         font-weight: 500;
+        color: #333;
     }
    
 }

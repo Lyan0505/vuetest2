@@ -14,8 +14,11 @@ export default[
     {
         path:'/home',
         component: resolve=>require(['./page/home/main.vue'], resolve)
-        
-
+    },
+    //组件调试
+    {
+        path:'/ued',
+        component:resolve=>require(['./component/index.vue'],resolve)
 
     }
 ]
