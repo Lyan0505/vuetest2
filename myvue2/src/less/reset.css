@@ -34,43 +34,62 @@ figcaption {
   font-style: normal;
   text-decoration: none;
   border: none;
-  -webkit-box-sizing: border-box;
+  color: #333;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
   box-sizing: border-box;
-  font-family: PingFang SC, sans-serif, "Microsoft Yahei";
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
 }
-body:focus,
-div:focus,
-span:focus,
-header:focus,
-footer:focus,
-nav:focus,
-section:focus,
-aside:focus,
-article:focus,
-ul:focus,
-dl:focus,
-dt:focus,
-dd:focus,
-li:focus,
-a:focus,
-p:focus,
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-h6:focus,
-i:focus,
-b:focus,
-textarea:focus,
-button:focus,
-input:focus,
-select:focus,
-figure:focus,
-figcaption:focus {
+body:hover,
+div:hover,
+span:hover,
+header:hover,
+footer:hover,
+nav:hover,
+section:hover,
+aside:hover,
+article:hover,
+ul:hover,
+dl:hover,
+dt:hover,
+dd:hover,
+li:hover,
+a:hover,
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+i:hover,
+b:hover,
+textarea:hover,
+button:hover,
+input:hover,
+select:hover,
+figure:hover,
+figcaption:hover {
   outline: none;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 input[type="button"],
 input[type="submit"],
@@ -85,9 +104,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+  background-color: #F5F5F5;
 }
 .clear:after {
   content: '';
@@ -121,7 +138,26 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#__vconsole .vc-item-content span:nth-of-type(1),
-#__vconsole .vc-item-content span:nth-of-type(2) {
-  color: #03A9F4;
+.paddingTop {
+  padding-top: 1.95rem;
+}
+@keyframes backOpacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation_opactiy {
+  animation: backOpacity 2s ease-in-out infinite;
 }
